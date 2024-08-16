@@ -1,0 +1,39 @@
+@charset "UTF-8"; /* conjunto de caracteres */
+
+/* em HTML é id = em CSS é # (rastag) so pode (um) elemento no mesmo documento.  */
+/* em HTML é class = em CSS é . (ponto) pode (varios) elementos no mesmo documento. */ 
+
+        /* CORPO DO SITE */
+body {
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+}
+        /* TÍTULO PRINCIPAL */
+h1{
+    color: rgb(250, 162, 54);
+}
+        /* ID - SELETOR ESPECIAL */
+h1#principal { 
+    text-align: center;
+    background-color: rgb(148, 82, 6);
+    color: white;
+}
+        /* SUBTÍTULO */
+h2{
+    color: rgb(190, 112, 17);
+    background-color: rgb(246, 214, 188);
+}
+
+
+    /* CLASS - SELETOR ESPECIAL todos os h2 */
+.basico {
+    color: rgb(190, 112, 17);
+}
+
+.intermediario {
+    color: rgb(201, 189, 15);
+}
+
+.avancado {
+    color: rgb(190, 17, 17);
+}

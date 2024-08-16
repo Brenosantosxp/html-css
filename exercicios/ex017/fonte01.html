@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{ /* SEM SHORTHAND FONT */
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: normal; /* peso da fonte: lighter - normal - bold - bolder  */
+            font-style:normal; /* estilo da fonte: italic - normal - oblique */
+
+        }
+
+        h1 {  /* COM SHORTHAND FONT */
+            /* (SHORTHAND) font <- propriedade E SUA ORDEM DE USO 
+             (font-style > font-wight > font-size > font-family) 
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+        /*        
+                (FONT-SIZE)
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+                
+            Medidas Relativas
+            m, ex, rem, vw, vh, %
+
+            16px geralmente = 1em ( o dobro do tamanho natural)
+        */
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eius, nulla repellat sunt obcaecati quidem illum quas amet voluptate eligendi delectus atque porro sapiente laudantium impedit aliquid magnam. Quam, labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis corporis officia optio, mollitia illum reiciendis rem odit deserunt, atque suscipit aliquid eius vel sint aut repudiandae, nam placeat sequi obcaecati.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis vel cumque adipisci iure ab molestiae autem, nobis delectus sequi consequuntur neque ea, accusantium exercitationem. Culpa adipisci non repellendus cumque deleniti!</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis consequatur consequuntur facere obcaecati iure. Beatae nihil eveniet, libero natus tempora eos unde, non a dolore, odit magni officiis iusto excepturi.</p>
+    
+</body>
+</html>

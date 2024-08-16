@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*  (SELETORES PERSONALIZADOS)
+            
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = clildren / filho / hierarquia 
+
+        */
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red; /* cor da fonte */
+            text-decoration: none; /* tirar sublinhado */
+            font-weight: bold; /* links em negrito */
+        }
+
+            /* EXEMPLO DE 3 PSEUDO-CLASSE */
+        a:visited{ /* quando abrir o link mudar a cor */
+            color: red;
+        }
+        a:hover{ /* animação ao passar cursor em cima */
+            text-decoration: underline; /* sublinhar qnd passar o mouse em cima */
+            color: rgb(249, 36, 36); /* cor fonte */
+        }
+        a:active{ /* quando clicar no link mudar de cor */
+            color: rgb(31, 248, 2);
+        } 
+
+                /* PSEUDO-ELEMENTO */
+        .especial{ /* classe criada apos o link desejado */
+            background-color: black;
+        }
+
+        .especial::before{ /* ANTES DO LINK */
+            content: '⇒';     /* conteúdo antes do link + simbolo */
+            color: white;
+        }
+        
+        .especial::after{ /* DEPOIS DO LINK */
+            content:'⇐';      /* conteudo depois do link + simbolo */
+            color: white;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemVídeo" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">Site do CursoemVideo</a></li>
+    </ul>
+
+            <!--link + direcionamento - target= "_blank" (abrir em outra aba)-->
+</body>
+</html>

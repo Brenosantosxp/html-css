@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> <!--CABEÇA/CONFIGURAÇÕES DO SITE-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        h1{ /* TITULO PRINCIPAL */
+            box-shadow:1px 1px 5px black;
+            background-color: rgb(242, 145, 126);
+        }
+        body{ /* CORPO DO SITE */
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgray;
+            text-align:justify;
+        }
+        header{ /* CABEÇALHO DO SITE */
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            
+        }
+        nav{ /* NAVEGAÇÃO OU MENU */
+            background-color: darkgray;
+            padding: 3px;
+            box-shadow: 1px 1px 3px black;
+            text-align: right;
+            
+        }
+        nav > a {/* EDITANDO LINK DA NAVEGAÇÃO */
+            text-decoration:none;
+            color: rgb(250, 249, 249);
+            font-weight: bold;
+            margin-right: 20px;
+            
+        }
+        nav > a:hover { /* ANIMAÇÃO NO LINK AO PASSAR CURSOR EM CIMA */
+            text-decoration: underline;
+        }
+        main{ /* CONTEÚDO PRINCIPAL DO SITE */
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+        }
+        article{ /* ARTIGO DA SEÇÃO DO SITE */
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside { /* CONTEÚDO REFERENTE AO ARTIGO */
+            background-color: rgb(165,165,165);
+        }
+        footer{ /* RODAPÉ DO SITE */
+            background-color: black;
+            color:white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+            border-radius: 10px 0%;
+        }
+        footer > p { /* EDITAR PARAGRÁFO DENTO DO RODAPÉ */
+            margin: 0px;
+        }
+        main > section > p { /* EDITAR PARAGRÁFO DENTRO DA SEÇÃO */
+            box-shadow:1px 1px 2px black;
+            background-color: aqua;
+        }
+        main > aside > p { /* EDITAR PARAGRÁFO DENTRO DO CONTEUDO REFERENTE AO SITE */
+            text-align:end;
+        }
+    </style>
+</head>
+<body>
+    <header> <!--CABEÇALHO/CONTEÚDO DO SITE-->
+        <h1>Meu site</h1>
+        <nav> <!--TAG PARA CRIAR MENU/ NAVEGAÇÃO -->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!-- CONTEÚDO PRINCIPAL -->
+        <section id="assuntos"> <!-- SEÇÕES DENTRO DO SITE-->
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias"> <!-- SEÇÕES DENTRO DO SITE-->
+            <article> <!--ARTIGO DA SEÇÃO-->
+                <h2>Notícia sobre o Brasil</h2> <!--SUBTÍTULO-->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod at ex pariatur blanditiis optio perferendis, minima exercitationem, fuga quos natus sapiente ratione accusamus eveniet laudantium provident aut, alias fugiat.</p>
+                <aside> <!-- REFERENTE AO ARTIGO ACIMA-->
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article> <!--ARTIGO DA SEÇÃO-->
+                <h2>Olimpíadas</h2> <!--SUBTÍTULO-->
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta culpa, est repudiandae officia repellendus unde tempora delectus mollitia tempore veniam quis, iure assumenda laborum, dolores consequuntur impedit deleniti! Soluta, molestiae.</p>
+                <aside> <!--REFERENTE AO ARTIGO ACIMA-->
+                    <p>Artigo escrito por Brunna Bennet Costa</p>
+                </aside>
+            </article>
+
+        </section>
+        <aside>
+            <p>Conteúdo referente ao site!</p>
+        </aside>
+    </main>
+    <footer> <!--RODAPÁ DO SITE-->
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+</body>
+</html>

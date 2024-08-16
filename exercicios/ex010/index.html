@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar <a href="https://www.facebook.com/BreenoSaantos1997" target="_blank" rel="external">meu perfil do facebook</a></p>
+    <p>Você tambem pode acessar o meu <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank" rel="external">canal gratuito no Youtube</a></p>
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira página do site. Se você quiser , pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página</a></p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/meulivro.zip" download="meulivro.zip">Livro compactado em zip</a></li>
+    </ul>
+
+
+    <!--Dentro da tag <a href , depois do link desejado , inclua o seguinte parêmetro-->
+    <!--target="_blank" PARA CRIAR JANELA EM BRANCO E rel="external" PARA MANDAR LINK EXTERNO ABRIR FORA DO SITE-->
+    <!--ATRIBUTO DA TAG <a> (rel="external") INDICA QUE É UM LINK PARA OUTRO SITE QUE NÃO FAZ PARTE DO SITE ATUAL -->
+    <!--ATRIBUTO DA TAG <a> (rel="next") INDICA QUE O LINK É PARA A PROXIMA PARTE DO DOCUMENTO ATUAL -->
+    <!--ATRIBUTO DA TAG <a> (target="_self") VAI ABRIR O LINK NA JANELA OU FRAME ATUAL -->
+
+    <!--Dentro da tag <ul> para criar lista não ordenada , inclua o seguinte:-->
+        <!--<Li> Lista de item + <a href="pasta/arquivo" download="nome do arquivo.pdf/.zip">apos o arquivo inclua:-->
+            <!--BAIXAR O LIVRO EM PDF / LIVRO COMPACTADO EM ZIP (ESPECIFICANDO A AÇÃO )-->    
+
+</body>
+</html>

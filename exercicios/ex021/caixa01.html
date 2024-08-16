@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title> <!--TITULO DA PÁGINA-->
+    <style> 
+        body{ 
+            background-color:rgb(250, 250, 250);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1{         /* ELEMENTO BOX/LEVEL */
+            background-color: lightgray; /* COR DE FUNDO */
+            
+            /* BOX-SIZE */
+            height: 300px;                 /* ALTURA */ 
+            width: 300px;                  /* LARGURA */ 
+            
+            border-width: 10px;            /* LARGURA DA BORDA */ 
+            border-style: solid;           /* ESTILO DA BORDA */ 
+            border-color: rgb(99, 158, 158); /* COR DA BORDA */
+
+            
+            /* PREENCHIMENTO DA CAIXA COMPLETO */
+            padding-top: 10px;      /* PREENCHIEMNTO CIMA */
+            padding-right: 10px;    /* PREENCHIMENTO DIREITA */
+            padding-bottom: 10px;   /* PREENCHIMENTO BAIXO */
+            padding-left: 10px;     /* PREENCHIMENTO ESQUERDA */
+            
+                    /* PREENCHIMENTO DA CAIXA SIMPLIFICADO 
+            padding:10PX 10PX 10PX 10PX;  dependendo dos valores
+                    */
+
+            
+            /* MAREM DA CAIXA COMPLETO */
+            margin-top: 10px;       /* MARGEM CIMA */
+            margin-right: 10px;     /* MARGEM DIREITA */
+            margin-bottom: 10px;    /* MARGEM BAIXO */
+            margin-left: 10px;      /* MARGEM ESQUERDA */
+            margin: auto;
+                        /* MAREM DA CAIXA SIMPLIFICADO 
+            margin: 10px 10px 10px 10px; dependendo dos valores 
+
+            ou centralizar ( margin: auto)
+                        */
+
+            /* ALTERAÇÃO DENTRO DA MARGEM  COMPLETO */
+            outline-width: 5px;     /* LARGURA DO CONTORNO */
+            outline-style: dashed;  /* ESTILO DO CONTORNO */
+            outline-color: brown; /* COR DO CONTORNO */
+
+                /* ALTERAÇÃO DENTRO DA MARGEM  SIMPLIFICADO
+            outline: 5px dashed brown; depedendo dos valores
+                */
+
+        }
+        a{    /* ELEMENTO INLINE-LEVEL */ 
+            
+            /* FORMATAÇÃO DA BORDA  COMPLETO */
+            border-width: 2px;      /* LARGURA DA BORDA */
+            border-style: solid;    /* ESTILO DA BORDA */
+            border-color: rgb(205, 77, 77);    /* COR DA BORDA */
+
+                /* FORMATAÇÃO DA BORDA  SIMPLIFICADO
+                    border: 2px solid red;
+                */
+        
+        }
+ 
+
+
+    </style>
+</head>
+<body> <!-- ( <h1>  e o <p> box-level / <a> box-inline)-->
+    <h1>Exemplo de caixa box-level</h1> <!--TITULO PRINCIPAL DO SITE-->
+    <p>Paragráfos também são exemplos de box-level , mas os <a href="#">Links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
