@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Fundo de Tela Fixo</title>
     <style>
         body{
             height: 100vh; /* ALTURA DA VIEW PORT */
             background-color: black; /* COR DE FUNDO */
             background-image: url('imagens/wallpaper002.jpg'); /* IMAGEM DE FUNDO */
-            background-position: center top; /* POSIÇÃO DP FUNDO */
+            background-position: center center; /* POSIÇÃO DP FUNDO */
             background-repeat: no-repeat; /* REPETIÇÃO DA IMAGEM DE FUNDO */
             background-size: cover; /* TAMHNO DA IMAGEM DE FUNDO */
+            background-attachment:fixed; /* FUNDO FIXO / CONTEÚDO MOVENDO */
+
+            
+            /* SHORTHAND - BACKGROUND ( PROPRIEDADE SIMPLIFICADA ) 
+            color > image > position > repeat > [size] > attachment 
+            */
+
         
             /*     BACKGROUND-SIZE E SEUS VALORES 
 
@@ -26,7 +33,7 @@
 
         main{   /* CONTEÚDO PRINCIPAL DO SITE */
             background-color: white;
-            width: 400px; /* LARGURA */
+            max-width: 400px; /* LARGURA */
             padding: 10px; /* PREENCHIMENTO INTERNO */
             margin: auto; /* MARGEM */
             border: 1px solid blue; /* BORDA /TAMANHO / TIPO / COR */
@@ -37,7 +44,7 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ut, quisquam quia minus quae velit sed. Repellat excepturi, placeat enim iusto earum a non, repudiandae dicta ut sint nesciunt quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptate iste sed voluptates consequatur deserunt velit facilis maxime, aperiam inventore modi iure delectus perspiciatis minima accusamus quaerat, consequuntur ut praesentium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni doloremque accusamus assumenda in tempore, consectetur, at eum quidem, nesciunt et ab perspiciatis distinctio aliquam? Sed quis ut nihil laboriosam nesciunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ut, quisquam quia minus quae velit sed. Repellat excepturi, placeat enim iusto earum a non, repudiandae dicta ut sint nesciunt quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptate iste sed voluptates consequatur deserunt velit facilis maxime, aperiam inventore modi iure delectus perspiciatis minima accusamus quaerat, consequuntur ut praesentium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni doloremque accusamus assumenda in tempore, consectetur, at eum quidem, nesciunt et ab perspiciatis distinctio aliquam? Sed quis ut nihil laboriosam nesciunt.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ut, quisquam quia minus quae velit sed. Repellat excepturi, placeat enim iusto earum a non, repudiandae dicta ut sint nesciunt quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptate iste sed voluptates consequatur deserunt velit facilis maxime, aperiam inventore modi iure delectus perspiciatis minima accusamus quaerat, consequuntur ut praesentium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni doloremque accusamus assumenda in tempore, consectetur, at eum quidem, nesciunt et ab perspiciatis distinctio aliquam? Sed quis ut nihil laboriosam nesciunt.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ut, quisquam quia minus quae velit sed. Repellat excepturi, placeat enim iusto earum a non, repudiandae dicta ut sint nesciunt quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptate iste sed voluptates consequatur deserunt velit facilis maxime, aperiam inventore modi iure delectus perspiciatis minima accusamus quaerat, consequuntur ut praesentium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni doloremque accusamus assumenda in tempore, consectetur, at eum quidem, nesciunt et ab perspiciatis distinctio aliquam? Sed quis ut nihil laboriosam nesciunt.</p>
     </main>
 </body>
 </html>
