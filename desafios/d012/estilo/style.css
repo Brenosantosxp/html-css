@@ -36,7 +36,7 @@ header > h1 { /* CABEÇALHO DO TITULO PRINCIPAL */
 }
 
 header > p {
-    padding-bottom: 50px; /* ESPAÇAMENTO ABAIXO DO TITULO */
+    padding-bottom: 50px; /* ESPAÇAMENTO ABAIXO */
 }
 
 header a , footer a { /* LINKS DO CABEÇALHO / RODAPÉ */
@@ -58,6 +58,10 @@ section { /* TODAS AS SEÇÕES DO SITE */
     font-size: 3.1vw; /* TAMANHO DA FONTE EM LARGURA */
 }
 
+section > p {
+    padding-bottom: 2em; /* ESPAÇAMENTO ABAIXO */
+}
+
 section.normal { /* SEÇÃO E A CLASSE CRIADA PERSONALIZADA */ 
     background-color: white;
     color: black;
@@ -66,13 +70,28 @@ section.normal { /* SEÇÃO E A CLASSE CRIADA PERSONALIZADA */
 section.imagem { /* SEÇÃO E A CLASSE CRIADA PERSONALIZADA */
     background-color: rgba(0, 0, 0, 0.252);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473); /* SOMBRA DE CAIXA PARA DENTRO */
+    background-attachment: fixed; /* FUNDO FIXO COM CONTEÚDO ROLANDO */
 
 }
 
 section.imagem > p { /* PARÁGRAFO DENTRO DE SEÇÃO DA CLASSE IMAGEM */
     display: inline-block; /* CAIXA ADPTÁVEL AO CONTEÚDO */
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.252);
+    background-color: rgba(0, 0, 0, 0.396);
+    text-shadow: 1px 1px 0px black; /* SOMBRA DE TEXTO */
+     
+}
+
+section#img01 { /* ID DA SEÇÃO DA CLASSE IMAGEM */
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center; /* IMAGEM POSICIONADA NO CENTRO A DIREITA */
+    background-size: cover; /* TAMANHO DA IMAGEM DE FUNDO COMPLETA COM CORTES  */
+}
+
+section#img02{  /* ID DA SEÇÃO DA CLASSE IMAGEM */
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;/* TAMANHO DA IMAGEM DE FUNDO COMPLETA COM CORTES  */
 }
 
 footer { /* RODAPÉ */
