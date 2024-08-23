@@ -1,2 +1,66 @@
 @charset "UTF-8";
 
+* { /* CONFIGURAÇÃO GLOBAL PARA TODOS OS ELEMENTOS */
+    margin: 0px;
+    padding: 0px;
+}
+
+html , body {
+    min-height: 100%; /* TAMANHO MINIMO DA VIEW PORT / CAIXA */
+    background-color: darkgray;
+}
+
+header {
+    background-color: black; /* COR DE FUNDO */
+    color: white; /* COR DA FONTE */
+    text-align: center; /* TEXTO AO CENTRO */
+}
+
+header > h1 { /* CABEÇALHO DO TITULO PRINCIPAL */
+    padding-top: 50px; /* ESPAÇAMENTO ACIMA DO TITULO */
+    font-variant:small-caps ; /* TODAS AS LETRAS EM MAIÚSCULAS */
+}
+
+header > p {
+    padding-bottom: 50px; /* ESPAÇAMENTO ABAIXO DO TITULO */
+}
+
+header a , footer a { /* LINKS DO CABEÇALHO / RODAPÉ */
+    color: white; /* COLR DA FONTE */
+    text-decoration: none; /* SEM DECORAÇÃO */
+    font-weight: bolder; /* DEIXAR EM NEGRITO */
+}
+
+header a:hover, footer a:hover {   /* ANIMAÇÃO AO PASSAR CURSOR EM CIMA */
+    text-decoration: underline; /* DEIXAR SUBLINHADO */
+}
+
+section { /* TODAS AS SEÇÕES DO SITE */
+    padding-top: 10vh; /* ESPAÇAMENTO ACIMA - (vh ALTURA ) */
+    padding-bottom: 10vh; /* ESPAÇAMENTO ABAIXO - (vh ALTURA ) */
+    line-height: 2em; /* ALTURA DAS LINHAS */
+    padding-left: 20px; /* ESPAÇAMENTO A ESQUERDA */
+}
+
+section.normal { /* SEÇÃO E A CLASSE CRIADA PERSONALIZADA */ 
+    background-color: white;
+    color: black;
+}
+
+section.imagem { /* SEÇÃO E A CLASSE CRIADA PERSONALIZADA */
+    background-color: rgba(0, 0, 0, 0.252);
+    color: white;
+
+}
+
+section.imagem > p { /* PARÁGRAFO DENTRO DE SEÇÃO DA CLASSE IMAGEM */
+    width: 400px; /* LARGURA DA CAIXA */
+    background-color: rgba(0, 0, 0, 0.252);
+}
+
+footer { /* RODAPÉ */
+    background-color: black; /* COR DE FUNDO */
+    color: white; /* COR DA FONTE */
+    text-align: center; /* TEXTO AO CENTRO */
+    padding: 10px; /* ESPAÇAMENTO P/ TODOS OS LADOS */
+}
