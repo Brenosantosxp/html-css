@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        section#container { /* SEÇÃO / ID */
+            position: relative; /* POSIÇÃO - RELATIVA */
+            height: 96vh; /* ALTURA DA CAIXA */
+            padding: 10px; /* PREENCHIMENTO */
+            background-color: rgb(128, 49, 49); /* COR DE FUNDO */
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+        }
+
+        article#conteudo { /* ARTIGO / ID */
+            position: absolute; /* POSIÇÃO - ABSOLUTA */
+            height: 200px; /* ALTURA DA CAIXA */
+            width: 400px; /* LARGURA */
+            background-color: yellow; /* COR DE FUNDO */
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            
+            
+            left: 50%; /* DISTANCIA DA BORDA ESQUERDA P/ DENTRO */
+            top: 50%; /* DISTANCIA DA BORDA DE CIMA P/ DENTRO */
+
+            transform: translate(-50% , -50%);/* TRANSOFRMAR E CENTRALIZAR AO MEIO */
+
+                    /* VERTICAL E HORIZONTAL */
+        }
+    </style>
+</head>
+<body>
+    <section id="container"> <!--SEÇÃO-->
+        <article id="conteudo"> <!--ARTIGO-->
+
+        </article>
+    </section>
+</body>
+</html>
