@@ -1,13 +1,25 @@
 @charset "UTF-8";
+    /* 2 FONTES IMPORTADAS POR GOOGLE FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+                    /* VARIÁVEIS GLOBAIS */
+:root { /* PSEUDO CLASSE - DEFINIÇÃO P/ DOCUMENTO INTEIRO */
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif; /* CABEÇALHO / RODAPÉ */
+    --fonte2: "Roboto", sans-serif; /* TITULOS */
+    --fonte3: "Sriracha", cursive;  /* CONTEÚDO */
+}
 
 * { /* CONFIGURAÇÃO GLOBAL PARA TODOS OS ELEMENTOS */
     margin: 0px;
     padding: 0px;
+    font-size: 1em; /* TAMANHO DA FONTE */
 }
 
 html , body {
     min-height: 100%; /* TAMANHO MINIMO DA VIEW PORT / CAIXA */
     background-color: darkgray;
+    font-family: var(--fonte1); /* FONTE PERSONALIZADA DO GOOGLE FONTES */
 }
 
 header {
@@ -19,6 +31,8 @@ header {
 header > h1 { /* CABEÇALHO DO TITULO PRINCIPAL */
     padding-top: 50px; /* ESPAÇAMENTO ACIMA DO TITULO */
     font-variant:small-caps ; /* TODAS AS LETRAS EM MAIÚSCULAS */
+    font-family: var(--fonte2); /* FONTE PERSONALIZADA DO GOOGLE FONTES */
+    font-size: 6vw; /* TAMANHO DA FONTE EM LARGURA */
 }
 
 header > p {
@@ -40,6 +54,8 @@ section { /* TODAS AS SEÇÕES DO SITE */
     padding-bottom: 10vh; /* ESPAÇAMENTO ABAIXO - (vh ALTURA ) */
     line-height: 2em; /* ALTURA DAS LINHAS */
     padding-left: 20px; /* ESPAÇAMENTO A ESQUERDA */
+    font-family: var(--fonte3);
+    font-size: 3.1vw; /* TAMANHO DA FONTE EM LARGURA */
 }
 
 section.normal { /* SEÇÃO E A CLASSE CRIADA PERSONALIZADA */ 
@@ -54,7 +70,8 @@ section.imagem { /* SEÇÃO E A CLASSE CRIADA PERSONALIZADA */
 }
 
 section.imagem > p { /* PARÁGRAFO DENTRO DE SEÇÃO DA CLASSE IMAGEM */
-    width: 400px; /* LARGURA DA CAIXA */
+    display: inline-block; /* CAIXA ADPTÁVEL AO CONTEÚDO */
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.252);
 }
 
