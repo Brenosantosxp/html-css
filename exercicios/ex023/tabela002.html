@@ -11,6 +11,7 @@
         table{ /* CONFIGURAR TABELA EM GERAL */
             width: 500px;
             border-collapse: collapse; /* BORDA JUNTO DO CONTEÚDO */
+            position: relative;
         }
 
         caption{ /* TITULO OU LEGENDA DA TABELA */
@@ -19,13 +20,32 @@
             padding: 10px; /* ESPAÇAMENTO INTERNO */
             background-color: lightgray; /* COR DE FUNDO */
         }
-        td , th {
+        td , th { /* DADOS E TITULO DE TABELA */
             border: 1px solid black; /* BORDA: TAMANHO , TIPO E COR */
             padding: 10px; /* ESPAÇO INTERNO */
         }
+
+        tbody > tr:nth-child(2n) { /* TODO CORPO EM FORMA DE ESTILO ZEBRADO */
+            background-color: lightgray;
+
+            /* 
+                nth-child > filho 
+                2n > ( 1 sim outra não )
+
+                valores da pseudo classe :nth-child
+                >> odd - impar / even - par 
+            */
+        }
+
         thead , tfoot { /* CONFIGURAR CABEÇA E PÉ */
             background-color: darkgray; /* COR DE FUNDO */
             color:rgb(245, 246, 246); /* COR DA FONTE */
+        }
+
+        thead > tr > th { /* TH DENTRO DO TR QUE ESTA DENTRO DO CABEÇALHO */
+            position: sticky; /* POSIÇÃO GRUDADA */
+            top: -1px; /* NO TOPO */
+            background-color: darkgray; /* COR DE FUNDO */
         }
 
         .num{ /* CLASSE PARA NUMERO */
@@ -182,5 +202,20 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim voluptatum quidem odit fugiat repellat assumenda ut velit voluptate maxime illo? Quia rem aliquid asperiores delectus quo quis sint expedita repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quia similique vel doloremque ea quas at est, unde consequuntur facilis. Ut neque tenetur optio recusandae earum itaque, in est facilis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus dignissimos atque officia! Consequuntur dignissimos non quae neque, sint soluta id maiores, enim perspiciatis doloribus eveniet cum voluptates! Vel, corrupti perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reprehenderit repudiandae provident eius, aliquam ad corrupti magnam error vel optio blanditiis quisquam ratione suscipit voluptates eveniet non maiores commodi dolorum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus architecto laudantium suscipit reprehenderit nihil optio dolores? Numquam hic voluptatibus sed nostrum iusto minus tenetur cupiditate rem ipsa aliquid? Provident, repellendus!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim voluptatum quidem odit fugiat repellat assumenda ut velit voluptate maxime illo? Quia rem aliquid asperiores delectus quo quis sint expedita repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quia similique vel doloremque ea quas at est, unde consequuntur facilis. Ut neque tenetur optio recusandae earum itaque, in est facilis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus dignissimos atque officia! Consequuntur dignissimos non quae neque, sint soluta id maiores, enim perspiciatis doloribus eveniet cum voluptates! Vel, corrupti perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reprehenderit repudiandae provident eius, aliquam ad corrupti magnam error vel optio blanditiis quisquam ratione suscipit voluptates eveniet non maiores commodi dolorum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus architecto laudantium suscipit reprehenderit nihil optio dolores? Numquam hic voluptatibus sed nostrum iusto minus tenetur cupiditate rem ipsa aliquid? Provident, repellendus!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim voluptatum quidem odit fugiat repellat assumenda ut velit voluptate maxime illo? Quia rem aliquid asperiores delectus quo quis sint expedita repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quia similique vel doloremque ea quas at est, unde consequuntur facilis. Ut neque tenetur optio recusandae earum itaque, in est facilis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus dignissimos atque officia! Consequuntur dignissimos non quae neque, sint soluta id maiores, enim perspiciatis doloribus eveniet cum voluptates! Vel, corrupti perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reprehenderit repudiandae provident eius, aliquam ad corrupti magnam error vel optio blanditiis quisquam ratione suscipit voluptates eveniet non maiores commodi dolorum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus architecto laudantium suscipit reprehenderit nihil optio dolores? Numquam hic voluptatibus sed nostrum iusto minus tenetur cupiditate rem ipsa aliquid? Provident, repellendus!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim voluptatum quidem odit fugiat repellat assumenda ut velit voluptate maxime illo? Quia rem aliquid asperiores delectus quo quis sint expedita repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quia similique vel doloremque ea quas at est, unde consequuntur facilis. Ut neque tenetur optio recusandae earum itaque, in est facilis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus dignissimos atque officia! Consequuntur dignissimos non quae neque, sint soluta id maiores, enim perspiciatis doloribus eveniet cum voluptates! Vel, corrupti perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reprehenderit repudiandae provident eius, aliquam ad corrupti magnam error vel optio blanditiis quisquam ratione suscipit voluptates eveniet non maiores commodi dolorum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus architecto laudantium suscipit reprehenderit nihil optio dolores? Numquam hic voluptatibus sed nostrum iusto minus tenetur cupiditate rem ipsa aliquid? Provident, repellendus!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim voluptatum quidem odit fugiat repellat assumenda ut velit voluptate maxime illo? Quia rem aliquid asperiores delectus quo quis sint expedita repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quia similique vel doloremque ea quas at est, unde consequuntur facilis. Ut neque tenetur optio recusandae earum itaque, in est facilis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus dignissimos atque officia! Consequuntur dignissimos non quae neque, sint soluta id maiores, enim perspiciatis doloribus eveniet cum voluptates! Vel, corrupti perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reprehenderit repudiandae provident eius, aliquam ad corrupti magnam error vel optio blanditiis quisquam ratione suscipit voluptates eveniet non maiores commodi dolorum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus architecto laudantium suscipit reprehenderit nihil optio dolores? Numquam hic voluptatibus sed nostrum iusto minus tenetur cupiditate rem ipsa aliquid? Provident, repellendus!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim voluptatum quidem odit fugiat repellat assumenda ut velit voluptate maxime illo? Quia rem aliquid asperiores delectus quo quis sint expedita repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quia similique vel doloremque ea quas at est, unde consequuntur facilis. Ut neque tenetur optio recusandae earum itaque, in est facilis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus dignissimos atque officia! Consequuntur dignissimos non quae neque, sint soluta id maiores, enim perspiciatis doloribus eveniet cum voluptates! Vel, corrupti perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reprehenderit repudiandae provident eius, aliquam ad corrupti magnam error vel optio blanditiis quisquam ratione suscipit voluptates eveniet non maiores commodi dolorum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus architecto laudantium suscipit reprehenderit nihil optio dolores? Numquam hic voluptatibus sed nostrum iusto minus tenetur cupiditate rem ipsa aliquid? Provident, repellendus!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim voluptatum quidem odit fugiat repellat assumenda ut velit voluptate maxime illo? Quia rem aliquid asperiores delectus quo quis sint expedita repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quia similique vel doloremque ea quas at est, unde consequuntur facilis. Ut neque tenetur optio recusandae earum itaque, in est facilis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus dignissimos atque officia! Consequuntur dignissimos non quae neque, sint soluta id maiores, enim perspiciatis doloribus eveniet cum voluptates! Vel, corrupti perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reprehenderit repudiandae provident eius, aliquam ad corrupti magnam error vel optio blanditiis quisquam ratione suscipit voluptates eveniet non maiores commodi dolorum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus architecto laudantium suscipit reprehenderit nihil optio dolores? Numquam hic voluptatibus sed nostrum iusto minus tenetur cupiditate rem ipsa aliquid? Provident, repellendus!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim voluptatum quidem odit fugiat repellat assumenda ut velit voluptate maxime illo? Quia rem aliquid asperiores delectus quo quis sint expedita repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quia similique vel doloremque ea quas at est, unde consequuntur facilis. Ut neque tenetur optio recusandae earum itaque, in est facilis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus dignissimos atque officia! Consequuntur dignissimos non quae neque, sint soluta id maiores, enim perspiciatis doloribus eveniet cum voluptates! Vel, corrupti perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reprehenderit repudiandae provident eius, aliquam ad corrupti magnam error vel optio blanditiis quisquam ratione suscipit voluptates eveniet non maiores commodi dolorum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus architecto laudantium suscipit reprehenderit nihil optio dolores? Numquam hic voluptatibus sed nostrum iusto minus tenetur cupiditate rem ipsa aliquid? Provident, repellendus!</p>
 </body>
 </html>
