@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{ /* CORPO DO SITE TODO */
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(144, 144, 143);
+            }
+
+        table {
+            border-collapse: collapse;
+            width: 350px;
+            }
+        
+        td {
+            border: 1px solid rgb(236, 231, 231);
+            padding: 10px;
+            text-align: center;
+            color: rgb(242, 240, 240);
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+            <!--propriedade p/ expansão ou mesclagem de  coluna e valor , ocupar espaço em coluna -->
+            
+        </tr>
+        <tr>
+            <td rowspan="3">D</td>
+            <!--propriedade p/ extensão de linha e valor / ocupar espaço em linhas-->
+
+            <td>E</td>
+            <td rowspan="2">F</td>
+        </tr>
+        <tr>
+            
+            <td>H</td>
+
+        </tr>
+        <tr>
+            
+            <td colspan="2">K</td>
+        </tr>
+
+        <!--
+        COLSPAN - PROPRIEDADE PARA EXPANSÃO DE COLUNA 
+        ROWSPAN - PROPRIEDADE PARA EXTENSÃO DE LINHA 
+        -->
+    </table>
+</body>
+</html>

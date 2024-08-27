@@ -22,7 +22,7 @@
         }
         td , th { /* DADOS E TITULO DE TABELA */
             border: 1px solid black; /* BORDA: TAMANHO , TIPO E COR */
-            padding: 10px; /* ESPAÇO INTERNO */
+            padding: 8px; /* ESPAÇO INTERNO */
         }
 
         tbody > tr:nth-child(2n) { /* TODO CORPO EM FORMA DE ESTILO ZEBRADO */
@@ -38,14 +38,14 @@
         }
 
         thead , tfoot { /* CONFIGURAR CABEÇA E PÉ */
-            background-color: darkgray; /* COR DE FUNDO */
+            background-color:  rgb(107, 105, 105); /* COR DE FUNDO */
             color:rgb(245, 246, 246); /* COR DA FONTE */
         }
 
         thead > tr > th { /* TH DENTRO DO TR QUE ESTA DENTRO DO CABEÇALHO */
             position: sticky; /* POSIÇÃO GRUDADA */
             top: -1px; /* NO TOPO */
-            background-color: darkgray; /* COR DE FUNDO */
+            background-color: rgb(107, 105, 105); /* COR DE FUNDO */
         }
 
         .num{ /* CLASSE PARA NUMERO */
@@ -71,7 +71,7 @@
         <thead> <!--CABEÇA DA TABELA-->
             <tr> <!--LINHA DA TABELA-->
                 <th scope="col">Estado</th> <!--tag para cabeçalho ou titulo de tabela-->
-                <th scope="col" style="width: 50px;">População</th>
+                <th scope="col" style="width: 100px;">População</th>
 
                 <!--
                     SCOPE = COL > MESMA COLUNA
