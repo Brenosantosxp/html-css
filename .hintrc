@@ -17,6 +17,15 @@
       {
         "label": "off"
       }
+    ],
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "iframe[allow]",
+          "iframe[loading]"
+        ]
+      }
     ]
   }
 }
