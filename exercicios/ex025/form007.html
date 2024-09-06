@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+              <!--ELEMENTO (SELECT) com valor de name e id > REPRESENTA UM CONTROLE QUE APRESENTA UM MENU DE OPÇÕES-->  
+                
+                <option value="" selected>--  Escolha  --</option>
+                    <!--Caixa de escolha ou seleção p/ usuário-->
+                
+                    <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+                <!--OPTGROUP > CRIA UM GRUPO DE OPÇÕES DENTRO DO ELEMENTO (SELECT)-->
+            
+            </select>
+            
+        </p>
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof" autocomplete="off">
+            <datalist id="lstprof">
+                <option >Administrador</option>
+                <option >Contador</option>
+                <option >Desenvolvedor</option> 
+                <option >Militar</option>  
+            </datalist>
+            <!--ELEMENTO (DATALIST) > MOSTRA UMA LISTA DE ELEMENTOS PREDEFINIDOS COMO OPÇÃO PARA UMA CAIXA DE ENTRADA DE TEXTO
+            
+            datalist id="###"
+            PARAMETRO NO INPUT > list="mesmo id do datalist"
+
+            -->
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="20" rows="10" placeholder="Sua mensagem aqui..."></textarea>
+            <!--ELEMENTO (TEXTAREA) > REPRESENTA UM CONTROLE DE EDIÇÃO PARA UMA CAIXA DE TEXTO / COLUNAS E LINHAS POR OPÇÃO > PLACEHOLDER - DICA P/ O USUÁRIO-->
+            
+            <!--QUANDO USADO O ELEMENTO ACIMA , USE O (METHOD - POST > ENVIADO PARA FORA DA URL ) -->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
