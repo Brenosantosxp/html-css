@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
  /* APARELHO DEITADO ( LANDSCAPE ) */
+
+ body{
+    background-image: url(../imagens/cev-landscape.jpg); /* IMAGEM DE FUNDO , IMAGEM BAIXADA PERSONALIZADA */
+    background-position: left bottom; /* POSIÇÃO DE FUNDO ,  ESQUERDA E INFERIOR(baixo) */
+ }

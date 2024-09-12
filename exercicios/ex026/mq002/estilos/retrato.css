@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
 /* APARELHO EM PÉ ( PORTRATI ) */
+
+body{
+    background-image: url(../imagens/cev-portrait.jpg);  /* IMAGEM DE FUNDO , + IMAGEM BAIXADA PERSONALIZADA */  
+    background-position: center bottom; /* POSIÇÃO DE FUNDO , CENTRO E INFERIOR(baixo) */
+}
