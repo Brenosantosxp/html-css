@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/* versão mobile first */
+
+*{  /* config global p/ todo o site */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+body , html {
+    background-color:rgb(228, 225, 225);
+}
+
+header{ /* cabeçalho */
+    background-color: rgb(187, 185, 185);
+}
+
+header > h1 { /* titulo do cabeçalho */
+    padding: 10px; /* espaçamento p/ todos os lados  */
+    text-align: center; /* alinhamento de texto ao centro */
+}
+
+span#burguer { /* caminho p/ icone do menu com id burguer*/
+    background-color: rgb(68, 66, 66);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer; /* cursor com a maozinha */
+}
+
+span#burguer:hover { /* animação ao passar cursor em cima do icone do menu */
+    background-color: white;
+    color: black;
+}
+
+menu{ /* menu */
+    display: none; /* exibido em bloco */
+}
+
+menu > ul { /* lista dentro do menu */
+    list-style-type: none; /* tirar as bolinhas do menu */
+}
+
+menu a { /* link que esta dentro do menu */
+    display: block;
+    padding: 10px; 
+    text-decoration: none; /* sem decoração de texto */
+    background-color: rgb(103, 102, 102); /* cor de fundo */
+    color: white; /* cor da fonte */
+    text-align: center; /* alinhamento de texto ao centro */
+    border-top:2px solid gray ;
+}
+
+menu > ul > li > a:hover { /* animação ao passar cursor em cima dos links do menu */
+    background-color: gray;
+}
+
+main{ /* conteúdo principal do site */
+    width: 90vw; /* largura da view port */
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px; 
+    border-radius: 10px; /* arredondamento de borda */
+}
+
+article > h2 { /* sub titulo do artigo */
+    padding-bottom: 20px;  /* espaçamento no fundo */
+}
+
+article > p { /* paragrafo do artigo */
+    text-align: justify; /* alinhamento de texto justificado */
+    margin-bottom: 20px; /* margin do fundo */
+    text-indent: 20px; /* espaço no inicio do paragrafo */
+}
