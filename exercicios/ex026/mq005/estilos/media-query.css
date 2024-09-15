@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* 
+    Typical Device Breakpoints
+
+    Pequenas telas: até 480px
+    Celular: de 481px até 600px
+    Tablet: de 601px até 1024px
+    Descktop: de 1025px até 1440px
+    Grandes telas: acima de 1441px
+
+*/
+
+@media screen and (min-width: 600px ) { /* TELAS PEQUENAS E CELULARES */
+    span#burguer {
+        display: none; /* ESCONDER MENU 3 LINHAS QND PASSA DO TAMANHO ESPECIFICO */
+    }
+
+    menu {
+        display: block; /* APARECER OPÇÕES DENTRO DO MENU QUANDO ATINGIR TAMANHO */
+    }
+
+    menu > ul > li { /* ITENS DA LISTA DO MENU */
+        display: inline-block; /* EXIBIR BLOCO EM LINHA ( LADO A LADO ) */
+    }
+
+    main {
+        width: 600px;
+    }
+}

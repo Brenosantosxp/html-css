@@ -6,8 +6,9 @@
     <title>Menu Responsivo</title>
     <link rel="stylesheet" href="estilos/style.css"> <!--link p/ css externo-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()"> <!--APLICAÇÃO JAVASCRIPT PARA QND MUDAR TAMANHO-->
     <header> <!--cabeçalho-->
         <h1>Meu Site </h1> <!--titulo do site-->
         <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
@@ -30,11 +31,20 @@
         </article>
     </main>
     <script>
-        function clickMenu() {
+        function clickMenu() { /* FUNÇÃO AO CLICAR NO MENU */
             if (itens.style.display == 'block'){ /* menu exibido */
                 itens.style.display = 'none' /* apos clicar , menu esconde */
             } else {
                 itens.style.display = 'block' /* clicando em menu p/ mostrar de nv */
+            }
+        }
+
+        function mudouTamanho(){ /* FUNÇÃO AO ALTERAR TAMANHO DE TELA */
+            if (window.innerWidth >= 600){ /* MAIOR OU IGUAL A 600px */
+                itens.style.display = 'block'
+                /* SE A TELA FOR MAIOR OU IGUAL A 600px , ELE MOSTRA FORÇADAMENTE O MENU EM BLOCO */
+            } else {
+                itens.style.display = 'none' /* SE NÃO FOR MAIOR , CONFIGURAÇÃO NAO MUDARÁ */
             }
         }
     </script>
