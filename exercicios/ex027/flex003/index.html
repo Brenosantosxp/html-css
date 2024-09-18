@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner { /* CLASSE P/ CONTEÚDO PAI */
+            background-color: bisque;
+            display: flex; /* EXIBIÇÃO FLEXIVEL */
+            flex-direction: row; /* DIREÇÃO FLEXIVEL EM LINHA */
+            flex-wrap: wrap; /* QUEBRA CONTEUDO NO SENTIDO DO EIXO CROSS AXIS */
+            
+
+            /* PROPRIEDADE FLEX-FLOW 
+
+            JUNÇÃO DA PROPRIEDADE FLEX-DIRECTION + FLEX-WRAP 
+                flex-flow: row wrap;
+                (FLEX-FLOW: ROW WRAP)
+            
+            */
+        }
+
+        div.item { /* CLASSE P/ CONTEÚDO FILHO */
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto; /* PREENCHE TODO ESPAÇO EM BRANCO DENTRO DO ELEMENTO PAI */ 
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+    </div>
+</body>
+</html>
