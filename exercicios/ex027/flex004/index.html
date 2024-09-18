@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner { /* CAIXA PRINCIPAL - PAI */
+            background-color: bisque;
+            display: flex;
+            flex-flow: row nowrap; /* FLUXO FLEXIVEL - LINHA SEM QUEBRA */
+            justify-content: space-around; /* JUSTIFICAR CONTEUDO - ESPAÇO AO REDOR */
+            align-items: center; /* ALINHAMENTO DE ITENS - AO CENTRO */
+            height: 200px;
+
+            /* P / USAR A PROPRIEDADE ( ALIGN-ITEMS ) , TEMOS QUE AUMENTAR A ALTURA(HEIGHT) DO CONTEINER (CAIXA) - PAI */
+        }
+
+        div.item { /* CLASSE P/ FILHO - ITENS */
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
+</body>
+</html>
