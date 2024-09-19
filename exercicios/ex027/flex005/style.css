@@ -3,7 +3,7 @@
 *{ /* configuração global */
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* caixa de borda */
 }
 
 body{ /* corpo do site */
@@ -12,8 +12,8 @@ body{ /* corpo do site */
 
 main{ /* conteúdo principal ( pai ) */
     background-color: cornsilk;
-    height: 100vh; /* altura de 90% da tela */
-    width: 100vw;  /* largura de 90% da tela */
+    height: 100vh; /* altura de 100% da tela */
+    width: 100vw;  /* largura de 100% da tela */
 
     display: flex; 
     flex-flow: row nowrap; /* valor do flex direction + flex wrap - linha sem quebra  */ 
