@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+*{ /* configuração global */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{ /* corpo do site */
+    background-color: lightpink;
+}
+
+main{ /* conteúdo principal ( pai ) */
+    background-color: cornsilk;
+    height: 100vh; /* altura de 90% da tela */
+    width: 100vw;  /* largura de 90% da tela */
+
+    display: flex; 
+    flex-flow: row nowrap; /* valor do flex direction + flex wrap - linha sem quebra  */ 
+    justify-content: center;/* justificar conteúdo - centro */
+    align-items: center; /* alinhar itens - centro */
+}
+
+section{
+    background-color: lightcyan;
+    height: 200px; /* altura */
+    width: 200px; /* largura */
+}
