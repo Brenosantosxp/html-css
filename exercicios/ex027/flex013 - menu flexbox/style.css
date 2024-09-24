@@ -18,14 +18,40 @@ header{ /* cabeçalho do site */
     background-color: grey;
     color: white;
     padding: 10px;
+
+    display: flex; /* exibição flexivel */
+    flex-flow: row wrap; /* linha com quebra */
+    justify-content: space-between; /* justificar conteúdo , espaço entre */
+    align-items: center;
 }
 
 header > h1 { /* titulo do cabeçalho */
     border: 1px dotted black;
+    flex: 0 0 200px;
+}
+
+header > nav > a { /* configurando link do menu dentro do cabeçalho */
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header > nav > a:hover { /* qnd passar cursor em cima do menu */
+    background-color: white;
+    color: black;
+    transition: background-color .5s; /* tempo de transação ao passar cursor */
 }
 
 nav { /* barra de navegação do site(menu) */
     border: 1px dotted black;
+
+    display: flex; /* conteiner flexivel */
+    flex-flow: row wrap; /* linha com quebra */
+    justify-content: flex-end; /* justificar conteúdo , grudar no final ao quebrar */
 }
 
 main { /* conteúdo principal do site */
