@@ -26,8 +26,9 @@ header{ /* cabeçalho do site */
 }
 
 header > h1 { /* titulo do cabeçalho */
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
     flex: 0 0 200px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.696);
 }
 
 header > nav > a { /* configurando link do menu dentro do cabeçalho */
@@ -47,7 +48,7 @@ header > nav > a:hover { /* qnd passar cursor em cima do menu */
 }
 
 nav { /* barra de navegação do site(menu) */
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
 
     display: flex; /* conteiner flexivel */
     flex-flow: row wrap; /* linha com quebra */
@@ -60,4 +61,18 @@ main { /* conteúdo principal do site */
     padding: 10px;
     border-radius: 10px; /* borda arredondada */
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.285); /* sombra de caixa */
+}
+
+main > h2 { /* subtitulo do conteudo principal */
+    text-align: center;
+    padding: 10px 10px;
+    background-color: rgba(12, 12, 12, 0.404);
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.619);
+}
+
+main > p { /* paragrafo do conteudo principal */
+    text-align: justify; /* texto justificado */
+    text-indent: 30px;  /* espaço no inicio do paragrafo */
+    padding-top: 10px;
 }

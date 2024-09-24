@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+header , header > nav{ /* cabeçalho e menu */
+    flex-flow: column nowrap;
+}
+
+header > h1 { /* titulo do cabeçalho */
+    flex-basis: 50px; /* base flexivel */
+}
+
+header > nav > a { /* links do menu do cabeçalho */
+    width: 90vw; /* largura total da view port */
+}
