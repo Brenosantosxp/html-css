@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+*{ /* config global p/ pag toda */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{ /* corpo do site */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em; /* tamanho da fonte */
+    background-color: lightgray;
+    height: 100vh; /* altura da tela */
+    width: 100vw;  /* largura da tela */
+}
+
+header{ /* cabeçalho do site */
+    background-color: grey;
+    color: white;
+    padding: 10px;
+}
+
+header > h1 { /* titulo do cabeçalho */
+    border: 1px dotted black;
+}
+
+nav { /* barra de navegação do site(menu) */
+    border: 1px dotted black;
+}
+
+main { /* conteúdo principal do site */
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px; /* borda arredondada */
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.285); /* sombra de caixa */
+}
