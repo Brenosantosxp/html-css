@@ -37,8 +37,8 @@ header > nav > a { /* configurando link do menu dentro do cabeçalho */
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
+    text-decoration: none; /* texto sem decoração */
+    text-align: center;  /* alinhamento de texto - ao centro */
 }
 
 header > nav > a:hover { /* qnd passar cursor em cima do menu */

@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* MOBILE FIRST */
+
 header , header > nav{ /* cabeçalho e menu */
     flex-flow: column nowrap;
 }
@@ -9,5 +11,5 @@ header > h1 { /* titulo do cabeçalho */
 }
 
 header > nav > a { /* links do menu do cabeçalho */
-    width: 90vw; /* largura total da view port */
+    width: 90vw; /* 90% da largura total da tela */
 }
